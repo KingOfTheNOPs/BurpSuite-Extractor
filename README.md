@@ -1,5 +1,5 @@
-# Burp-File-Extract
-Description: extracting files from burp when abusing a vulnerability like an IDOR with intruder. <br>
+# BurpSuite-Extractor
+Description: extracting files or JSON responses from burp when abusing a vulnerability like an IDOR with intruder. <br>
 Explanation: the script takes burp's XML output for saved requests, base64 decodes the response and parses the CDATA and filename field in the response. The filename is then used when saving the contents extracted from the CDATA field. The solution worked for my scenario (PDFs, DOCs, XLS) but may not work for all filetypes. 
 
 
@@ -14,6 +14,7 @@ The script should be ready to go! <br>
 ### Usage:
 ```
 python3 burp-file-extract.py
+python3 burp-json-extract.py
 ```
 
 ### Reference:
